@@ -1,0 +1,133 @@
+/* styles.css */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-details {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.card-name,
+.card-expansion,
+.card-price,
+.card-rarity,
+.card-condition,
+.card-collector-number,
+.card-quantity {
+    color: white;
+}
+.card-condition {
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 4px 0;
+    opacity: 0.8;
+}
+.card-rarity {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 4px 0;
+}
+.card-collector-number {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 8px;
+    opacity: 0.8;
+}
+.card-expansion {
+    font-size: 0.875rem;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+.card-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 8px 0;
+}
+.card-quantity {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+.ribbon-container {
+    position: relative;
+    overflow: visible;
+}
+.ribbon {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background: blue;
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.reverse-glow {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+    border: 2px solid rgba(0, 123, 255, 0.5);
+    border-radius: 10px;
+}
+.cart-animation-icon {
+    position: fixed;
+    font-size: 24px;
+    color: #FFC107;
+    z-index: 1000;
+    transition: all 0.8s ease-in-out;
+}
+.slide-fade-enter-active {
+    transition: all 0.8s ease;
+}
+.slide-fade-leave-active {
+    transition: all 0.5s ease;
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
+}
+.v-data-table {
+    margin-top: 20px;
+    background-color: #1E1E1E;
+    color: white;
+}
+.v-data-table-header {
+    background-color: #121212;
+    color: white;
+    font-weight: bold;
+}
+.v-data-table__tr {
+    background-color: #1E1E1E;
+    color: white;
+}
+.v-data-table__tr:hover {
+    background-color: #2E2E2E;
+}
+.v-data-table__td {
+    padding: 12px;
+}
+.card-image {
+    border-radius: 5px;
+}
