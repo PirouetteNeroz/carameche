@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; // Assurez-vous que ce chemin est correct
+import App from './app'; // Assurez-vous que ce chemin est correct
 
 ReactDOM.render(
   <React.StrictMode>
